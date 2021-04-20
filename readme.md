@@ -1,0 +1,1 @@
+run all spec files with `yarn test` 
