@@ -1,3 +1,2 @@
-run all specs:
-`yarn install` (node >v14)
+`yarn install` (requires node v14 or later)
 `yarn test`
