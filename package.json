@@ -6,7 +6,8 @@
   "author": "Notarize",
   "license": "ISC",
   "dependencies": {
-    "@wdio/cli": "^7.5.0"
+    "@wdio/cli": "^7.5.0",
+    "yarn": "^1.22.10"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.16",
