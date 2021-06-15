@@ -29,7 +29,7 @@ function checkLoginBasics(){
 }
 
 function checkLoginPageLinks(){
-  //CHECK ALL LINKS ON PAGE
+  //CHECK ALL LINKS ON LOGIN PAGE
   //Home button (image)
   it('should have a button linking to the home page', () => {
     LoginPage.verifyHomeBtn();
@@ -53,8 +53,6 @@ function checkLoginInput(){
     LoginPage.noEmailWarn();
   });
   it('should display a warning indicating an invalid email address accordingly', () =>{
-    //this should only be the case if a complete email was previously entered, then invalidated
-    //only occurs after clicking outside text box
     LoginPage.inavalidEmailWarn();
   });
   it('should display a warning indicating an need for email address accordingly', () =>{
