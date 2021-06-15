@@ -1,21 +1,12 @@
 `yarn install` (requires node v14 or later)  
 `yarn test`
 
-- does "Welcome Back " only work if I've been there before?
+NOTE:
+I did not fully test the functionality of the continue button or the email text box on the forgot password page, because it was beginning to seem out of scope for the assessment, and I had already done so on the login page which seemed to show the same behavior. 
 
-- does everything still work the same with resizing
+GENERAL ASSUMPTIONS:
+-Login Page has not been visited previously in this environment, there is no user currently logged in.
 
--** remember to comment each test thoroughly
--** list the assumptions made for all of your tests
+-It is safe to test without fully resetting the browser for each test. I leave the state of cookies left by previous tests. Otherwise I would reset the browser after each test. 
 
-<<<<<<< Updated upstream
-- do you want me to test the password page too?
-- do you want me to test the ? button?
-- do you want me to test the reset password button?
-
--look into Yarn
-=======
-ASSUMPTIONS:
-Login Page has not been visited previously in this environment, there is no user currently logged in
-It is safe to test without fully resetting the browser for each test, relying on the state of cookies left by previous tests. Otherwise I would reset the browser after each test. 
->>>>>>> Stashed changes
+-Identifiers for page elements would be sufficient for testing because they are unique enough to function in the provided scenario
