@@ -3,17 +3,10 @@ import * as LoginPage from "../pages/login.page";
 describe('Notarize Signer Login Page', () => {
   checkLoginBasics();
 
-<<<<<<< Updated upstream
-  checkPageLinks();
-=======
   checkLoginPageLinks();
->>>>>>> Stashed changes
 
   checkLoginInput();
   
-<<<<<<< Updated upstream
-  // checkLoginFunction();
-=======
   checkPasswordPageLinks();
 
   checkPswdInput();
@@ -22,10 +15,7 @@ describe('Notarize Signer Login Page', () => {
 
   checkForgotPswdInput();
 
-  checkResizing();
->>>>>>> Stashed changes
-
-  
+  // checkResizing();
 });
 
 function checkLoginBasics(){
@@ -38,7 +28,7 @@ function checkLoginBasics(){
   });
 }
 
-function checkPageLinks(){
+function checkLoginPageLinks(){
   //CHECK ALL LINKS ON PAGE
   //Home button (image)
   it('should have a button linking to the home page', () => {
@@ -62,11 +52,11 @@ function checkLoginInput(){
   it('should not display a warning message before typing in email input', () => {
     LoginPage.noEmailWarn();
   });
-  // it('should display a warning indicating an invalid email address accordingly', () =>{
-  //   //this should only be the case if a complete email was previously entered, then invalidated
-  //   //only occurs after clicking outside text box
-  //   LoginPage.inavalidEmailWarn();
-  // });
+  it('should display a warning indicating an invalid email address accordingly', () =>{
+    //this should only be the case if a complete email was previously entered, then invalidated
+    //only occurs after clicking outside text box
+    LoginPage.inavalidEmailWarn();
+  });
   it('should display a warning indicating an need for email address accordingly', () =>{
     LoginPage.requiredEmailWarn();
   });
@@ -80,15 +70,13 @@ function checkLoginInput(){
     LoginPage.validEmailAddr();
   });
   it('should advance to the password page when correct email credentials are provided', () =>{
-    LoginPage.validEmailContinue();
+    LoginPage.validEmailCont();
   });
 }
 
-function checkPasswordInput(){
+function checkPswdInput(){
   // CHECK PASSWORD PAGE
-<<<<<<< Updated upstream
-=======
-  it('should ... ', () =>{
+  it('should have a new password text input ', () =>{
     LoginPage.noPswdWarn();
   });
   it('should not enable the continue button if no password has been entered ', () =>{
@@ -139,5 +127,4 @@ function checkResizing(){
   /*I was hoping to test the resizing features of the page, but either it's 
   functionality is hidden somewhere that I'm not seeing or it's part of Bootstrap
   or something similar that I am not familar with*/
->>>>>>> Stashed changes
 }

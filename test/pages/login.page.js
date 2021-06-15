@@ -51,12 +51,8 @@ export function noEmailWarn(){
 }
 
 export function emptyEmailAddr(){
-<<<<<<< Updated upstream
-  let emailBox = $("._2-7En-hQFKdqE8IoOpDvfk");
-=======
   browser.url("https://app.notarize.com/login");
   let emailBox = $("input[data-automation-id='email-field'], #email");
->>>>>>> Stashed changes
   //use all classes to identify button due to lack of unique identifiers
   let contBtn = $("button[class='CoreButton Button is-large is-fullwidth active-darken hover-darken Button-action']");
   emailBox.clearValue("");
@@ -64,12 +60,8 @@ export function emptyEmailAddr(){
 }
 
 export function invalidEmailAddr(){
-<<<<<<< Updated upstream
-  let emailBox = $("._2-7En-hQFKdqE8IoOpDvfk");
-=======
   browser.url("https://app.notarize.com/login");
   let emailBox = $("input[data-automation-id='email-field'], #email");
->>>>>>> Stashed changes
   //use all classes to identify button due to lack of unique identifiers
   let contBtn = $("button[class='CoreButton Button is-large is-fullwidth active-darken hover-darken Button-action']");
   emailBox.setValue("phillip.wellheuser");
@@ -102,12 +94,8 @@ export function requiredEmailWarn(){
 }
 
 export function validEmailAddr(){
-<<<<<<< Updated upstream
-  let emailBox = $("._2-7En-hQFKdqE8IoOpDvfk");
-=======
   browser.url("https://app.notarize.com/login");
   let emailBox = $("input[data-automation-id='email-field'], #email");
->>>>>>> Stashed changes
   //use all classes to identify button due to lack of unique identifiers
   let contBtn = $("button[class='CoreButton Button is-large is-fullwidth active-darken hover-darken Button-action']");
   emailBox.setValue("phillip.wellheuser@gmail.com");
@@ -115,11 +103,6 @@ export function validEmailAddr(){
   expect(contBtn).toBeEnabled(); 
 }
 
-<<<<<<< Updated upstream
-export function validEmailContinue(){
-  
-}
-=======
 function goToPswdPg(){
   browser.url("https://app.notarize.com/login");
   
@@ -285,4 +268,3 @@ export function verifyResetBackBtn(){
   expect(contBtn).toHaveText('Continue');
 }
 
->>>>>>> Stashed changes
