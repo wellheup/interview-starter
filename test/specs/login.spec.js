@@ -3,11 +3,27 @@ import * as LoginPage from "../pages/login.page";
 describe('Notarize Signer Login Page', () => {
   checkLoginBasics();
 
+<<<<<<< Updated upstream
   checkPageLinks();
+=======
+  checkLoginPageLinks();
+>>>>>>> Stashed changes
 
-  // checkLoginInput();
+  checkLoginInput();
   
+<<<<<<< Updated upstream
   // checkLoginFunction();
+=======
+  checkPasswordPageLinks();
+
+  checkPswdInput();
+
+  checkPasswordPageLinks();
+
+  checkForgotPswdInput();
+
+  checkResizing();
+>>>>>>> Stashed changes
 
   
 });
@@ -70,4 +86,58 @@ function checkLoginInput(){
 
 function checkPasswordInput(){
   // CHECK PASSWORD PAGE
+<<<<<<< Updated upstream
+=======
+  it('should ... ', () =>{
+    LoginPage.noPswdWarn();
+  });
+  it('should not enable the continue button if no password has been entered ', () =>{
+    LoginPage.emptyPswd();
+  });
+  it('should display a warning message if a password has been typed then removed ', () =>{
+    LoginPage.emptyPswdWarn();
+  });
+  it('should not log in when provided an incorrect password ', () =>{
+    LoginPage.invalidPswd();
+  });
+  it('should warn the user when incorrect login information is provided ', () =>{
+    LoginPage.inavalidPswdWarn();
+  });
+  it('should proceed to login if correct login information is provided ', () =>{
+    LoginPage.validPswdCont();
+  });
+  it('should display the entered password when the view password button is clicked ', () =>{
+    LoginPage.viewPswdBtn();
+  });
+  it('should hide the entered password when the view password button is clicked a second time', () =>{
+    LoginPage.hidePswdBtn();
+  });
+}
+
+function checkPasswordPageLinks(){
+  it('should prepare to reset password when "forgot password" button is clicked', () =>{
+    LoginPage.verifyForgotPswdBtn();
+  });
+  it('should go back to the login page when the back button is clicked', () =>{
+    LoginPage.verifyPswdBackBtn();
+  });
+}
+
+function checkForgotPswdInput(){
+  it('should present an email box for sending password reset instructions', () =>{
+    LoginPage.verifyResetEmailBox();
+  });
+  it('should have an altered submit button indicating the sending of a reset link', () =>{
+    LoginPage.verifyResetSubmitBtn();
+  });
+  it('should have a back button that navigates back to the main login page', () =>{
+    LoginPage.verifyResetBackBtn();
+  });
+}
+
+function checkResizing(){
+  /*I was hoping to test the resizing features of the page, but either it's 
+  functionality is hidden somewhere that I'm not seeing or it's part of Bootstrap
+  or something similar that I am not familar with*/
+>>>>>>> Stashed changes
 }
